@@ -12,10 +12,10 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 })
 
 export class UserComponent {
-  @Input({ required: true }) id!: string
-  @Input({ required: true }) avatar!: string
-  @Input({ required: true }) name!: string
-  @Output() select = new EventEmitter()
+  @Input({ required: true }) id!: string;
+  @Input({ required: true }) avatar!: string;
+  @Input({ required: true }) name!: string;
+  @Output() select = new EventEmitter();
 
 
 
@@ -31,7 +31,7 @@ export class UserComponent {
   }
 
   onSelectUser() {
-    this.select.emit()
+    this.select.emit(this.id)
   }
 
 }
