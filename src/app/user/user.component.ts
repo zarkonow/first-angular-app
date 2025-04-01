@@ -2,6 +2,7 @@ import { Component, computed, EventEmitter, Input, input, output, Output } from 
 import { DUMMY_USERS } from '../dummy-users';
 
 
+
 type User = {
   id: string;
   name: string;
@@ -21,7 +22,7 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
 export class UserComponent {
   @Input({ required: true }) user!: User;
-  
+
   @Output() select = new EventEmitter();
   //select = output<string>()
 
