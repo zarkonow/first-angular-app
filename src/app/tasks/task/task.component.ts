@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import  { type Task } from './task.model';
-import { NewTaskComponent } from '../new-task/new-task.component';
+
 
 
 @Component({
