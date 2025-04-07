@@ -35,15 +35,11 @@ export class TasksComponent {
   }
 
 
-  onCancleAddTask() {
+  onCloseAddTask() {
     this.isAddingTask = false
   }
 
-  onAddTask(taskData: NewTaskData) {
 
-    this.isAddingTask = false
-
-  }
 
 }
 
