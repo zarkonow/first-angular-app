@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 
 import { SharedModule } from './shared/shared.module';
-import { TasksComponent } from './tasks/tasks.component';
+import { TasksModule } from './tasks/tasks.module';
 
 
 @NgModule({
@@ -16,6 +16,6 @@ import { TasksComponent } from './tasks/tasks.component';
     UserComponent,
   ],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, FormsModule, SharedModule, TasksComponent],
+  imports: [BrowserModule, SharedModule, TasksModule],
 })
 export class AppModule { }
